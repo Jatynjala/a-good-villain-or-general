@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% if not session.username %}
+<h1>Would you be the general/villain number one?</h1>
+<p>Welcome to practicing good generalship and/or villany!<br>
+Please <a href="/log_in">log in</a> or <a href="/register">register</a>.
+{% else %}
+You are already logged in.<br>
+Please go to the <a href="/main">main page</a>.
+{% endif %}

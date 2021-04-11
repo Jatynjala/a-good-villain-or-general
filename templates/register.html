@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% if not session.username %}
+<form action="/register_check" method="POST">
+Both username and password must be at least 8 characters long.<br>
+Username: <input type="text" name="username"><br>
+Password: <input type="text" name="password"><br>
+<input type="submit" value="Register">
+</form><br>
+<a href="/start">Cancel</a>
+{% else %}
+You are already logged in.<br>
+Please go to the <a href="/main">main page</a>.
+{% endif %}
