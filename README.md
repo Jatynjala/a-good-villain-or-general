@@ -7,4 +7,5 @@ In the application you can:
 * Keep track of your average amount of correct answers (complete)
 * See the average amount of correct answers by all users (planned)
 * Anonymously propose new questions in the comment section (planned)
+
 The app does not yet work at Heroku.
