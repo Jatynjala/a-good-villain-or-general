@@ -3,7 +3,7 @@ With this application you can get some inspiration for being a good villain or g
 
 In the application you can:
 
-* Log in and out or register as a user
-* Keep track of your average amount of correct answers
-* See the average amount of correct answers by all users
-* Anonymously propose new questions in the comment section
+* Log in and out or register as a user (complete)
+* Keep track of your average amount of correct answers (complete)
+* See the average amount of correct answers by all users (planned)
+* Anonymously propose new questions in the comment section (planned)
