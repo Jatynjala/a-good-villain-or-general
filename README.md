@@ -8,4 +8,4 @@ In the application you can:
 * See the average amount of correct answers by all users (planned)
 * Anonymously propose new questions in the comment section (planned)
 
-The app does not yet work at Heroku.
+The app can be tested at Heroku [here](https://vogjat.herokuapp.com/start).
