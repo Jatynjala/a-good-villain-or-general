@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{{ question }}<br>
+<form action="/villany_question_check" method="POST">
+{% for answer in answers %}
+<input type="radio" name="answer" value="{{ answer[1] }}">{{ answer[0] }}<br>
+{% endfor %}
+<input type="submit" value="submit answer">
+<input type="hidden" name="ordernumber" value="{{ questionnumber }}">
+<input type="hidden" name="session_number" value="{{ session.session_number }}">
+</form>
