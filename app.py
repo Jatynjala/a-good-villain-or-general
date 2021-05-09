@@ -3,7 +3,7 @@ from flask import render_template, session, request, redirect
 from os import getenv, urandom, abort
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-from random import randint
+from random import randint, shuffle
 
 app = Flask(__name__)
 app.secret_key = getenv("SECRET_KEY")
@@ -29,5 +29,5 @@ def main():
     rights = user[1]
     average = 0
     if tries != 0:
-        average = rights/tries
+        average = round((rights/tries), 2)
     return render_template("main.html", average=average, username=username)
