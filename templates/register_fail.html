@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 {% if not session.username %}
-Username or password is already being used.<br>
+Invalid username or password<br>
 Please try a different username and password.<br>
 Both username and password must be at least 8 characters long<br>
 <form action="/register_check" method="POST">
 Username: <input type="text" name="username"><br>
-Password: <input type="text" name="password"><br>
+Password: <input type="password" name="password"><br>
 <input type="submit" value="Register">
 </form><br>
 <a href="/start">Cancel</a>

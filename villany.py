@@ -1,6 +1,6 @@
 from app import app, db
 from flask import render_template, request, redirect, session
-from random import randint
+from random import randint, shuffle
 from os import abort
 
 @app.route("/question_villany/<int:questionnumber>")
@@ -11,6 +11,7 @@ def Question_villany(questionnumber: int):
     question = db.session.execute(questionsqlcmd, {"questo":questo}).fetchone()[0]
     secsqlcomd = "SELECT option_villany, truth FROM Options_villany WHERE questo=:questo"
     answers = db.session.execute(secsqlcomd, {"questo":questo}).fetchall()
+    shuffle(answers)
     return render_template("Villain_page.html", question=question, answers=answers, questionnumber=questionnumber)
 
 @app.route("/villany_question_check", methods=["POST"])
